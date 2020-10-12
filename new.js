@@ -66,6 +66,7 @@ const loadNotes = function() {
         const bufferdata = fs.readFileSync('notes.json');
         const data = bufferdata.toString()
         parsedData = JSON.parse(data);
+        
         return parsedData
     } catch (e) {
         return [];
